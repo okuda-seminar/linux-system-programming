@@ -1,0 +1,10 @@
+version: "3"
+services:
+  linux_system_programming:
+    build:
+      context: .
+    container_name: linux_system_programming
+    tty: true
+    volumes:
+      - ./:/workspace/
+    
