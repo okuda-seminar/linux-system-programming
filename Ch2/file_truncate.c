@@ -1,7 +1,7 @@
 #include <unistd.h>
 #include <stdio.h>
 
-int main() {
+int main(void) {
     int ret;
 
     ret = truncate("./pirate.txt", 45);

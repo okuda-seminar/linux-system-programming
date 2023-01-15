@@ -4,7 +4,7 @@
 #include <fcntl.h>
 #include <stdlib.h>
 
-int main() {
+int main(void) {
     int fd;
     fd = creat("./tmp.txt", 0644);
     if (fd == -1) {

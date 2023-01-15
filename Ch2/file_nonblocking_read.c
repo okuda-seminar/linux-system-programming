@@ -5,7 +5,7 @@
 #include <unistd.h>
 #include <errno.h>
 
-int main() {
+int main(void) {
     int fd;
     char buf[BUFSIZ];
     ssize_t nr;

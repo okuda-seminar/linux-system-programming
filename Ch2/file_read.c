@@ -4,7 +4,7 @@
 #include <stdlib.h>
 #include <unistd.h>
 
-int main() {
+int main(void) {
     int fd;
     unsigned long word;
     ssize_t nr;

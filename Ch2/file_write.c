@@ -6,7 +6,7 @@
 #include <unistd.h>
 #include <string.h>
 
-int main() {
+int main(void) {
     int fd;
     const char *buf = "My ship is solid!\n";
     ssize_t nr;

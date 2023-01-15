@@ -4,7 +4,7 @@
 #include <stdlib.h>
 #include <unistd.h>
 
-int main() {
+int main(void) {
     int fd;
     fd = open("./tmp.txt", O_RDONLY);
     if (fd == -1) {
