@@ -20,5 +20,9 @@ int main() {
         printf("failed to read file\n");
         exit(-1);
     }
+
+    if (close(fd) == -1) {
+        perror("close");
+    }
     return 0;
 }

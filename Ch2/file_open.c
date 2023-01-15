@@ -2,6 +2,7 @@
 #include <sys/stat.h>
 #include <fcntl.h>
 #include <stdlib.h>
+#include <unistd.h>
 
 int main() {
     int fd;
@@ -11,5 +12,9 @@ int main() {
         exit(-1);
     }
     printf("opened file descriptor: %d\n", fd);
+
+    if (close(fd) == -1) {
+        perror("close");
+    }
     return 0;
 }

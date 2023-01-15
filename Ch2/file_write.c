@@ -25,5 +25,9 @@ int main() {
     } else if (nr != count) {
         printf("partial write happened\n");
     }
+
+    if (close(fd) == -1) {
+        perror("close");
+    }
     return 0;
 }
