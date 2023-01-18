@@ -4,6 +4,7 @@ services:
     build:
       context: .
     container_name: linux_system_programming
+    privileged: true
     tty: true
     volumes:
       - ./:/workspace/
