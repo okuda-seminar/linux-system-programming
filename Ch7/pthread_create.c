@@ -2,6 +2,7 @@
 #include <pthread.h>
 #include <stdio.h>
 
+// ref: https://maku77.github.io/cpp/pthread/create-thread.html
 void *start_routine(void* pArg) {
     int *pVal = (int*) pArg;
     printf("worker thread [%d]\n", *pVal);
